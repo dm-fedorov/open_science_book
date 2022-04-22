@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Правильная работа с данными" href="markdown.html" />
+    <link rel="next" title="1. Дата-грамотность и открытая воспроизводимая наука" href="chapter_01/01.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -75,11 +75,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="_static/logo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Воспроизводимая наука о данных</h1>
@@ -99,18 +94,38 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="markdown.html">
-   Правильная работа с данными
+  <a class="reference internal" href="chapter_01/01.html">
+   1. Дата-грамотность и открытая воспроизводимая наука
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="notebooks.html">
-   Content with notebooks
+  <a class="reference internal" href="chapter_02/02.html">
+   2. Использование Bash для управления файлами
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="markdown-notebooks.html">
-   Notebooks with MyST Markdown
+  <a class="reference internal" href="chapter_03/03.html">
+   3. Jupyter для Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter_04/04.html">
+   4. Форматы текстовых файлов
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter_05/05.html">
+   5. Git и GitHub
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter_06/06.html">
+   6. Структуры научных данных в Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter_07/07.html">
+   7. Написание эффективного и чистого кода с использованием Python
   </a>
  </li>
 </ul>
@@ -201,8 +216,18 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#license">
-   License
+  <a class="reference internal nav-link" href="#id2">
+   Оглавление
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Контакты
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Лицензия
   </a>
  </li>
 </ul>
@@ -226,8 +251,18 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#license">
-   License
+  <a class="reference internal nav-link" href="#id2">
+   Оглавление
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Контакты
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Лицензия
   </a>
  </li>
 </ul>
@@ -241,27 +276,33 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
 <h1>Воспроизводимая наука о данных<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Джордан Морроу, автор книги “Как вытащить из данных максимум. Навыки аналитики для неспециалистов” определяет дата-грамотность, как способность читать данные, работать с ними, анализировать их и общаться на языке данных.</p>
-<p>Мы все привыкли, что программирование никак не связано с гуманитарными исследованиями, но в мире довольно много происходит в области цифровой гуманитаристики (Digital Humanities): визуализация исторических данных, анализ и распознавание текстов (компьютерная лингвистика) и т. д. Стимулом к развитию цифровой гуманитаристики являются открытые данные, доступные для свободного скачивания и исследования.</p>
-<p>Широкий интерес к дата-грамотности обусловлен в том числе появлением ряда свободных программных продуктов. Наиболее популярные из них - Python, R и Julia. Каждый из них имеет многочисленные библиотеки и отзывчивое сообщество пользователей. Перечисленные программы позволяют организовать весь цикл обработки данных: сбор, предобработку (очистку), анализ и представление результатов.</p>
-<p>Дата-грамотность тесно связана с понятием <em>открытой воспроизводимой науки</em>.</p>
-<p>Открытая наука предполагает доступность научных методов, данных и результатов. Она включает в себя:</p>
-<p>– прозрачность методов сбора, обработки и анализа данных;
-– общедоступные данные и связанные с ними методы обработки;
-– прозрачное сообщение результатов.</p>
-<p>Воспроизводимая наука предполагает, что любой (включая других и автора в будущем) может понять и воспроизвести шаги анализа, примененные к тем же или даже новым данным.</p>
-<p>Вместе открытая воспроизводимая наука позволяют делиться работой и сотрудничать с другими исследователями, а также открыто публиковать свои данные и рабочие процессы, чтобы способствовать расширению научных знаний.</p>
-<div class="section" id="license">
-<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="License: CC BY-SA 4.0" src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg" /></a></p>
-<p><em>Воспроизводимая наука о данных</em> распространяется по лицензии <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+<p>Электронный учебник пишется в рамках подготовки к проведению вводного курса по анализу данных и размещен на веб-сайте <a class="reference external" href="https://pycode.ru">https://pycode.ru</a></p>
+<p>Целью курса является приобретение навыков работы с инструментами воспроизводимых исследований.</p>
+<p>Пожалуйста, используйте <a class="reference external" href="https://github.com/dm-fedorov/open_science_book/issues">вопросы</a> и <a class="reference external" href="https://github.com/dm-fedorov/open_science_book/pulls">запросы на включение</a>, чтобы опубликовать любые предложения, комментарии, исправления опечаток и т. д.</p>
+<div class="section" id="id2">
+<h2>Оглавление<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Правильная работа с данными</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter_01/01.html">1. Дата-грамотность и открытая воспроизводимая наука</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter_02/02.html">2. Использование Bash для управления файлами</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter_03/03.html">3. Jupyter для Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter_04/04.html">4. Форматы текстовых файлов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter_05/05.html">5. Git и GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter_06/06.html">6. Структуры научных данных в Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter_07/07.html">7. Написание эффективного и чистого кода с использованием Python</a></li>
 </ul>
 </div>
+</div>
+<div class="section" id="id3">
+<h2>Контакты<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://dfedorov.spb.ru/">Дима Федоров</a>, <br />
+старший преподаватель, <br />
+начальник отдела анализа данных СПбГЭУ.</p>
+</div>
+<div class="section" id="id4">
+<h2>Лицензия<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="License: CC BY-SA 4.0" src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg" /></a></p>
+<p><em>Воспроизводимая наука о данных</em> распространяется по лицензии <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
 </div>
 </div>
 
@@ -290,10 +331,10 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="markdown.html" title="next page">
+    <a class='right-next' id="next-link" href="chapter_01/01.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Правильная работа с данными</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Дата-грамотность и открытая воспроизводимая наука</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -306,7 +347,7 @@ const thebe_selector_output = ".output, .cell_output"
     
       По Дима Федоров<br/>
     
-        &copy; авторское право 2021.<br/>
+        &copy; авторское право 2022.<br/>
   </p>
 </footer>
 </main>
