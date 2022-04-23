@@ -4,4 +4,17 @@
 
 Пожалуйста, используйте [вопросы](https://github.com/dm-fedorov/open_science_book/issues) и [запросы на включение](https://github.com/dm-fedorov/open_science_book/pulls), чтобы опубликовать любые предложения, комментарии, исправления опечаток и т. д.
 
+План по темам:
+1. Дата-грамотность и открытая воспроизводимая наука (open source)
+2. Jupyter блокноты
+3. Использование bash для управления файлами
+4. Форматы текстовых файлов
+5. Git и GitHub
+6. Python 
+7. Python для обработки научных данных
+8. Написание эффективного и чистого кода с использованием Python
+
+
+
+
 Эта книга находится под лицензией Creative Commons Attribution-ShareAlike 4.0 International License.. Чтобы просмотреть копию этой лицензии, посетите https://creativecommons.org/licenses/by-sa/4.0/ 
