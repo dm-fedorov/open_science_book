@@ -6,12 +6,5 @@ root: intro
 options:
   numbered: true
 chapters:
-- file: chapter_01/01
-- file: chapter_02/02
-- file: chapter_03/03
-- file: chapter_04/04
-- file: chapter_05/05
-- file: chapter_06/06
-- file: chapter_07/07
-- file: chapter_08/markdown-notebooks
-- file: chapter_09/notebooks
+- file: 01_intro/01
+
