@@ -6,16 +6,4 @@ root: intro
 options:
   numbered: true
 chapters:
-- file: intro/01
-- file: jupyter/01
-- file: linux/01
-- file: formats/01
-- file: git/01
-- file: python/01
-- file: numpy/01
-  sections:
-    - file: numpy/examples/height
-    - file: numpy/examples/pic_numpy
-- file: sql/01
-
-
+- file: intro/index
